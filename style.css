@@ -1,0 +1,27 @@
+.enemy-place {
+  position: relative;
+  top: 15px;
+  left: 40px;
+}
+
+.enemy-attributes {
+  text-align: center;
+}
+
+.enemy-name {
+  font: bold 110% serif; 
+}
+
+.enemy-health {
+  font: 150% serif; 
+}
+
+.enemy-img {
+  text-align: center;
+  /*margin-top: 50px;*/
+}
+
+.flash {
+  
+}
+
