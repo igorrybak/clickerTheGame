@@ -1,19 +1,25 @@
 .enemy-place {
-  position: relative;
-  top: 15px;
-  left: 40px;
+  text-align: center;
+  margin-top: 55px;
 }
 
-.enemy-attributes {
+/*.enemy-attributes {
+  background: url(./img/background.png) center no-repeat;
   text-align: center;
-}
+}*/
 
 .enemy-name {
-  font: bold 110% serif; 
+  position: absolute;
+  left: 30%;
+  font: bold 110% serif;
+  color: blue;
 }
 
 .enemy-health {
-  font: 150% serif; 
+  position: absolute;
+  right: 30%;
+  font: 150% serif;
+  color: red;
 }
 
 .enemy-img {
@@ -23,5 +29,9 @@
 
 .flash {
   
+}
+
+.end-label {
+	text-align: center;
 }
 
