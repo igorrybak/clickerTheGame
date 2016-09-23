@@ -1,12 +1,17 @@
+body {
+  /*background-image: url(./img/background-blue.png);*/
+  background-position: left bottom;
+  background-repeat: repeat-x repeat-y;
+}
+
 .enemy-place {
   text-align: center;
   margin-top: 55px;
 }
 
-/*.enemy-attributes {
-  background: url(./img/background.png) center no-repeat;
-  text-align: center;
-}*/
+.enemy-attributes {
+  
+}
 
 .enemy-name {
   position: absolute;
