@@ -9,7 +9,8 @@ let enemyHTML = document.getElementById("enemy");
 const Damage = 10;
 let i = 0;
 
-const doDamage = (enemy) => {
+const doDamage = (event, enemy) => {
+	console.log(event);
 	enemyHTML.innerHTML += '<div id="tempFlash" style="position: fixed; top:' + (event.clientY - 25) + 'px; left:' + (event.clientX - 25) + 'px;"><img src="./img/flash1.png"></div>';
 	setTimeout(() => {enemyHTML.removeChild(document.getElementById("tempFlash"));}, 70);
 
@@ -33,7 +34,7 @@ const startGame = () => {
 	console.log("-------------Game started-----------");
 	enemyHTML.innerHTML = '<div class="enemy-attributes"><div id="name" class="enemy-name">' + Enemies[i].name + '</div><div id="health" class="enemy-health">' + Enemies[i].health + '</div></div><div id="enemy" class="enemy-img"><img src="./img/enemy'+i+'.png"></div>';
 	enemyHTML.removeEventListener("click", startGame);
-	enemyHTML.addEventListener("click", () => { doDamage(Enemies[i]) });
+	enemyHTML.addEventListener("click", (event) => { doDamage(event, Enemies[i]) });
 };
 
 enemyHTML.addEventListener("click", startGame);
